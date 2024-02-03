@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List</h2>
+            <div class="row">
+                <form >
+                <input type="text" id="input-box" name="q" placeholder="Add your text">
+                <button onclick="addTask()" type="submit">Add</button>
+                </form>
+            </div>
+            <ul id="list-container">
+                <!--<li class="checked">item1</li>
+                <li>item2</li>
+                <li>item3</li>-->
+            </ul>
+        </div>
+    </div>
+    <script>
+        const inputBox=document.getElementById("input-box");
+        const listcontainer=document.getElementById("list-container");
+        function addTask(){
+            if(inputBox.value === ''){
+                alert("you must write something!");
+            }
+            else{
+                let li =document.createElement("li");
+                li.innerHTML=inputBox.value;
+                listcontainer.appendChild(li);
+                let span=document.createElement('span');
+                span.innerHTML="\u00d7"
+                li.appendChild(span);
+                saveData();
+            }
+            inputBox.value="";
+        } 
+        listcontainer.addEventListener("click",function(e){
+            if(e.target.tagName === "LI"){
+                e.target.classList.toggle("checked");
+                saveData();
+            }
+            else if(e.target.tagName === "SPAN"){
+                e.target.parentElement.remove();
+                saveData();
+            }
+        },false);       
+        function saveData(){
+            localStorage.setItem("test",listcontainer.innerHTML);
+        }
+        function showTask(){
+            listcontainer.innerHTML=localStorage.getItem("test");
+        }
+        showTask();
+    </script>
+</body>
+</html>

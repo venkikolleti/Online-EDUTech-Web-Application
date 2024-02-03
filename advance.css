@@ -1,0 +1,151 @@
+body{
+}
+p{
+    font-size: 1.1em;
+    margin-left:20px;
+}
+.container-big-1 b{
+    color:white;
+}
+.navbar{
+    background-color:black;
+    background-color:rgb(161, 212, 233);
+    background-color: white;
+}
+.navbar a{
+    color: black;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    
+}
+.container-big-1{
+    background-color: rgb(17, 17, 17);
+    background-color: rgb(27, 26, 26);
+
+}
+#html-side{
+    height: 100%;
+    top:75px;
+    position: sticky;
+}
+.container-big-1 ul a{
+    text-decoration: none;
+}
+.container-big-1 .list-group{
+    box-shadow: inset 0 0 0px rgb(141, 221, 217) , 0 0 10px rgba(152, 211, 203, 0.9);
+
+}
+.container-big-1 .list-group  .list-group-item{
+    background-color: black;
+    background-color: rgb(27, 26, 26);
+    box-shadow:0 0 5px 0px rgba(0,0,0,0.4),0 0 5px 0px rgba(0,0,0,0.4);
+    border: none;
+    color: grey;
+}
+.container-big-1 .list-group .list-group-item:hover{
+    background-color: grey;
+    color:white;
+}
+.html-body{
+    color:rgb(179, 175, 175);
+}
+.code{
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    box-shadow: inset 0 0 14px rgb(211, 231, 230) , 0 0 15px rgba(200, 221, 218, 0.9);
+}
+
+.code b{
+    color:black;
+}
+
+#html-content{
+    display: flex;
+}
+#javascript-content,#php-content,#mysql-content,#bootstrap-content,#jquery-content{
+    display: none;
+}
+
+
+.container-big-2 ul a{
+    text-decoration: none;
+}
+
+.container-big-2 .list-group{
+    box-shadow: inset 0 0 10px rgb(141, 221, 217) , 0 0 20px rgba(152, 211, 203, 0.9);
+
+
+}
+.container-big-2 .list-group  .list-group-item{
+    box-shadow:0 0 5px 0px rgba(0,0,0,0.3);
+
+    border: none;
+    color: grey;
+}
+.container-big-2 .list-group .list-group-item:hover{
+    background-color: grey;
+    color:white;
+}
+
+
+#Que1,#Que2,#Que3,#Que4,#Que5,#Que6{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.6),0 0 20px 0 rgba(0,0,0,0.5);
+}
+#Que1{
+
+}
+
+.todo-app ul{
+    background-color: white;
+    margin-left: -10px;
+
+}
+.todo-app ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(15, 15, 15);
+    padding:8px 0px ;
+}
+
+.todo-app li span{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+.todo-app li span:hover{
+    background: #edeef0;
+}
+
+
+@media screen and (max-width: 624px){
+    .container-big-1 .code{
+        width:350px;
+    }
+    .container-big-2 .code{
+        width: 400px;
+    }
+    .container-big-2 .vide{
+        width: 385px;
+        height: 350px;
+    }
+    #html-side{
+        display: none;
+    }
+
+}
+
+
+
+

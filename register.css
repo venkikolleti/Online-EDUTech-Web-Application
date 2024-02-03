@@ -1,0 +1,41 @@
+#navbar{
+    position: sticky;
+    top:0;
+    z-index:100;
+    
+}
+.container-big-1 a{
+    color: white;
+}
+.container-big-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url("tools/b4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+#container-big-2{
+    box-shadow: inset 0 0 30px rgb(111, 218, 212) , 0 0 30px rgba(105, 219, 214, 0.9); 
+    border-radius: 30px;
+}
+.container-big-2 input{
+    background:radial-gradient(rgba(0,0,0,0),rgba(212, 222, 243, 0.7));
+    border: 1px solid rgba(212, 222, 243, 0.7);
+    border-bottom: 3px solid rgb(204, 211, 114);
+    color:rgb(174, 192, 74);
+}
+
+.container-big-2 form button{
+    border-radius:5px ;
+    box-shadow: inset 0 0 30px rgb(150, 190, 188) , 0 0 30px rgba(153, 184, 180, 0.9);
+     
+    
+}
+
+.error{
+    color:red;
+}
+
+.footer .fab{
+    font-size: 30px;
+}

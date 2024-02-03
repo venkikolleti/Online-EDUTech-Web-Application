@@ -1,0 +1,82 @@
+.container-big-1 a{
+	color:white;
+}
+.container-big-2{
+    background:radial-gradient(rgba(0,0,0,0),rgba(212, 222, 243, 0.7),rgba(103, 114, 113, 0.5),rgba(76, 82, 92, 0.9));
+    width: 100%;
+
+}
+.quiz-header{
+    box-shadow: inset 0 0 0px rgb(53, 221, 221),0 0 0px rgba(214, 100, 100, 0.9);
+    border-radius: 20px 20px 0px 0px;
+}
+
+#al8{
+	display: none;
+
+}
+#al2,#al3,#al4,#al5,#al6,#al7,#al8,#al9,#al10,#al11{
+    display: none;
+}
+
+.quiz-container{
+    border-radius:20px ;
+	border: 2px solid blue;
+
+}
+.qa-set h4{
+	margin: 0 0 15px;
+	font-size: 20px;
+}
+.qa-ans-row{
+
+	position: relative;
+	margin-bottom: 10px;
+}
+.qa-ans-row input{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	cursor: pointer;
+
+}
+.qa-ans-row span{
+	display: block;
+	padding: 8px 15px;
+	background-color: #bad0c9;
+	border-radius: 15px;
+	transition: all 0.3s ease-out;
+}
+.qa-ans-row:hover span{
+
+	background-color: #9ab5ac;
+}
+.qa-ans-row input:checked + span{
+	background-color: #f93c3c;
+}
+.qa-ans-row input[valid]:checked + span{
+	background-color: green;
+	color: #fff;
+}
+#countdown{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#btn2{
+	display:none;
+}
+
+#congratulations{
+	color: rgb(6, 145, 6);
+}
+
+.footer .fab{
+    font-size: 30px;
+}
